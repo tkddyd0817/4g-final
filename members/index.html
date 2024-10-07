@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4조의 신셰계 프로젝트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=East+Sea+Dokdo&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="con">
+            <div class="icons">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-html5-41-1175209.png?f=webp">
+                <img class="icon"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-css-alt-3521367-2944811.png?f=webp">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png">
+                <img class="icon" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png">
+            </div>
+            <div class="title">신셰계 프로젝트</div>
+            <div class="bgm-wrap">
+                <!-- <input type="button" value="🙆🏻‍♂️" id="bgm"></input>
+                <input type="button" value="🙅🏻‍♀️"  id="stop"></input> -->
+                <!-- <button id="bgm">⏯️</button> -->
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="../index.html">Team</a>
+                </div>
+                <div class="menu-item">
+                    <a href="index.html">Members</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../visitors/index.html">Visitors</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                    <div class="card" id="member1">
+                        <img src="../images/sang.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">박상기</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member2">
+                        <img src="../images/jeong.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">정은혜</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member3">
+                        <img src="../images/jun.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">박준석</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member4">
+                        <img src="../images/kang.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">강대은</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member5">
+                        <img src="../images/shin.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">신상용</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalContainer1" class="hidden">
+                <div id="modalContent1">
+                    <div class="modal-info">
+                        <p>🐳 이름: 박상기</p>
+                        <p>🐳 MBTI: INFP</p>
+                        <p>🐳 E-mail: plan.stack@gmail.com</p>
+                        <p>🐳 Github: https://github.com/adorable-otter</p>
+                        <p>🐳 좌우명: 언제나 솔직하기</p>
+                        <p>🐳 TMI: TIL 하기 싫어</p>
+                    </div>
+                    <button id="modalCloseButton1" class="modal-close1">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer2" class="hidden">
+                <div id="modalContent2">
+                    <p>💗 이름 : 정은혜</p>
+                    <p>💗 MBTI : ENTJ</p>
+                    <p>💗 E-mail : gracejelly125@gmail.com</p>
+                    <p>💗 Github : https://github.com/gracejelly125/grace.git</p>
+                    <p>💗 블로그 : https://velog.io/@gracejelly125</p>
+                    <p>💗 협업 스타일 : 호기심 많은 물음표❓ 살인마(핑프아님)</p>
+                    <p>💗 TMI : 자연을 사랑하는 3개국 워홀러⛺, 4묘가정🐱</p><br><br><br>
+                    <button id="modalCloseButton2" class="modal-close2">&times;</button>
+                </div>
+            </div>
+            <div id="modalContainer3" class="hidden">
+                <div id="modalContent3">
+                    <p>&#128513;이름: 박준석</p>
+                    <p>&#128513;MBTI: INFJ</p>
+                    <p>&#128513;E-mail: bj932218@gmail.com</p>
+                    <p>&#128513;Github: https://github.com/bj9322/junseok.com.git</p>
+                    <p>&#128513;블로그: https://velog.io/@bj9322/posts</p>
+                    <p>&#128513;협업 스타일: 한 명의 낙오자 없이 다 같이 가자..!</p>
+                    <p>&#128513;TMI: 올해 6월 장교 전역한 따끈따끈한 민간인입니다.</p>
+                    <button id="modalCloseButton3">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer4" class="hidden">
+                <div id="modalContent4">
+                    <p>🐚이름: 강대은</p>
+                    <p>🐚MBTI: 불신론자</p>
+                    <p>🐚E-mail: daeeun123@daum.net</p>
+                    <p>🐚Github: https://github.com/kangdaeeun</p>
+                    <p>🐚블로그: https://blogger2484.tistory.com/</p>
+                    <p>🐚협업 스타일: 치어리더 & 광대형</p>
+                    <p>🐚TMI: 아무것도 모르는 감자라구욧ㅜ</p>
+                    <button id="modalCloseButton4" class="modal-close4">&times;</button>
+                </div>
+            </div>
+            <div id="modalContainer5" class="hidden">
+                <div id="modalContent5">
+                    <p>🤠 이름: 신상용</p>
+                    <p>🤠 MBTI: INFJ</p>
+                    <p>🤠  E-mail: tkddyd1259@gmail.com</p>
+                    <p>🤠  Github: https://github.com/tkddyd0817/saprta</p>
+                    <p>🤠  블로그:  https://tkddyd0817.tistory.com/</p>
+                    <p>🤠 협업 스타일: 화합을 중시하는 협업 서타일!!!</p>
+                    <p>🤠 TMI: 옷과 신발 음악듣는것을 좋아하는 도파민 중독자!!!~~~ </p>
+                    <button id="modalCloseButton5" class="modal-close5">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>
